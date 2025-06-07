@@ -1,0 +1,121 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+
+/*contenedor gracias*/
+
+
+.Gracias {
+    background-image: url('fondoGracias.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 30px 10vw 150px 10vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-gracias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.imagen-gracias {
+    flex: 1 1 100%;
+    text-align: center;
+    order: 1;
+}
+
+.Textos {
+    flex: 1 1 100%;
+    font-size: 1.2rem;
+    color: black;
+    order: 2;
+}
+
+.imagen-gracias img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+@media (min-width: 768px) {
+    .imagen-gracias {
+        flex: 1 1 500px;
+        order: 2;
+    }
+
+    .Textos {
+        flex: 1 1 400px;
+        order: 1;
+    }
+}
+
+@media (max-width: 767px) {
+  .imagen-gracias img {
+    max-width: 200px;
+    margin: 0 auto; /* opcional, para centrar */
+  }
+}
+
+
+/*boton enviar*/
+
+
+.botonEnviar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.botonEnviar:hover {
+  background-color: #333;
+}
+
+
+/*boton cerrar*/
+
+
+.boton-cerrar {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 999;
+}
+
+.boton-cerrar:hover {
+    transform: scale(1.2);
+    color: #e34c2b;
+}

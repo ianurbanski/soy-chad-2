@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="gracias.css">
+
+</head>
+<body>
+
+    <!-- seccion gracias -->
+
+    
+    <section class="Gracias">
+
+        <a href="index.html" class="boton-cerrar">✕</a>
+
+        <div class="contenedor-gracias">
+            <div class="Textos">
+                <h1>Gracias por sumarte, <span id="nombreMostrado"></span></h1>
+
+                <P> Tu interés nos alegra más que una caja a un gato.</P>
+
+                <p> Pronto recibirás en tu casilla de correo tu código <br>
+                    promocional para que disfrutes de un poquito de ciencia. <br>
+                    Mientras tanto, te alentamos a que explores nuestros ultimos productos.
+                </p>
+
+
+                <p> Gracias por ser parte de esta comunidad curiosa.</p>
+
+                <a href="https://tienda.elgatoylacaja.com">
+                    <button type="button" class="botonEnviar">
+                        Ir a la tienda
+                    </button>
+                </a>
+            </div>
+
+            <div class="imagen-gracias">
+                <img src="gatoencajaSVG.svg" alt="gracias imagen">
+            </div>
+        </div>
+
+        
+    </section>
+
+    <script>
+        const nombre = localStorage.getItem("nombreUsuario");
+        document.getElementById("nombreMostrado").textContent = nombre || "amigo curioso";
+    </script>
+
+</body>
+</html>
