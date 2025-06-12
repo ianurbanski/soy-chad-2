@@ -3,6 +3,9 @@
 <head>   
     <title>Document</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -24,33 +27,9 @@
 
     <section class="encabezado-seccion">
         <div class="contenedor">
-            <div class="info">
-                <h1>Abrí la caja <br> encontrá ciencia.</h1>
 
-                <p>
-                    Te regalamos un 25% de descuento para <br> que explores nuestra tienda virtual: libros, <br> 
-                    ebooks y otras cosas lindas que todavía no <br> sabías que necesitabas.
-                </p>
+         
 
-                <form id="formulario" class="formulario">
-
-                    <input type="text" name="nombre" id="nombreYApellido" placeholder="Nombre y apellido" required>
-
-                    <br>
-                    <br>  
-
-                    <input type="email" name="email" id="email" placeholder="Escriba su Email">
-
-                    <br>
-                    <br>
-
-                    <button type="submit" class="botonEnviar">
-                        <img src="cajaCerrada.png" alt="Icono enviar" class="icono-enviar">
-                        Abrí la caja.
-                    </button>
-
-                </form>
-            </div>
 
             <div class="carrusel1" data-bs-ride="carousel">
                 <div class="carruselIMG">
@@ -81,6 +60,38 @@
 
                 </div>
             </div>
+
+            
+
+            <div class="info">
+                
+                <h1 class="Abri">Abrí la caja <br> encontrá ciencia.</h1>
+
+                <p>
+                    Te regalamos un 25% de descuento para <br> que explores nuestra tienda virtual: libros, <br> 
+                    ebooks y otras cosas lindas que todavía no <br> sabías que necesitabas.
+                </p>
+
+                <form id="formulario" class="formulario">
+                 
+                    <input type="text" name="nombre" id="nombreYApellido" placeholder="Nombre y apellido" required>
+                 
+
+                    
+
+                    <input type="email" name="email" id="email" placeholder="Escriba su Email" required>
+
+                  
+
+                    <button type="submit" class="botonEnviar">
+                        <img src="cajaCerrada.png" alt="Icono enviar" class="icono-enviar">
+                        Abrí la caja.
+                    </button>
+
+                </form>
+            </div>
+
+            
         </div>
     </section>
 
@@ -118,7 +129,7 @@
 
 
     <section class="maravillas">
-    <h1>Algunas de nuestras maravillas!</h1>
+    <h1 class="h1">Algunas de nuestras maravillas!</h1>
 
 
     <div class="carruselContenedor">
@@ -200,18 +211,21 @@
     </div>
 
     <!-- Botones de navegación -->
+    
     <button class="carousel-control-prev" type="button" data-bs-target="#carruselBootstrap" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carruselBootstrap" data-bs-slide="next">
         <span class="carousel-control-next-icon"></span>
     </button>
+    
 
-    <div class="carousel-indicators custom-indicators">
+    <!-- <div class="carousel-indicators custom-indicators">
         <button type="button" data-bs-target="#carruselBootstrap" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carruselBootstrap" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carruselBootstrap" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+    </div> -->
+    
 </div>
 </div>
 
@@ -308,7 +322,7 @@
 <section class="footer">
     <footer class="footer">
 
-        <div class="contenedor">
+        <div class="contenedor-footer">
 
             <div>
                 <img src="fotter/Logo.png" class="gato">

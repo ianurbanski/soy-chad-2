@@ -6,7 +6,7 @@ body {
 }
 
 * {
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 
@@ -45,17 +45,24 @@ body {
 
 .info {
     flex: 1 1 400px;
+    min-width: 250px;
 }
 
-.carrusel1{
-    flex: 1 1 400px;
+.carrusel1 {
+    overflow: hidden;
+    position: relative;
+    flex: 1 1 400px; 
+    box-sizing: border-box;
+    min-width: 250px; 
 }
+
 
 .formulario {
     display: flex;
     flex-direction: column;
     gap: 0px;
-    width: 100%;
+    flex: 1 1 400px; 
+    width: none;
     max-width: 400px;
 }
 
@@ -63,7 +70,8 @@ body {
 .formulario input[type="email"] {
   border: none;
   border-bottom: 2px solid #000;
-  padding: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
   font-size: 16px;
   outline: none;
   width: 100%;
@@ -91,7 +99,7 @@ body {
 }
 
 .botonEnviar:hover .icono-enviar {
-  /* background-color: #333; */
+ 
   content: url('cajaAbierta.png');
 }
 
@@ -106,7 +114,7 @@ body {
 
 .seccion-imagen-fondo {
     background-image: url('trival/fondoDescuento.png');
-    background-size: cover; /* Mejora visual en todas las pantallas */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -117,10 +125,11 @@ body {
 
 .contenedor-trival {
     display: flex;
-    flex-wrap: wrap; /* Permite adaptar en pantallas chicas */
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    column-gap: 1.5rem;
+    row-gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -143,25 +152,32 @@ body {
     border-radius: 12px;
 }
 
-
-@media (max-width: 550px) {
-    .contenedor-trival {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .texto-trival, .imagen-superpuesta {
-        max-width: 100%;
-    }
-}
-
-
 /*seccion maravillas (carrusel de 3)*/
 
-
 .maravillas {
-    padding: 30px 150px 150px 150px ;
+    padding: 30px 15px 100px 15px ;
 }
+
+.h1 {
+  padding-left: 100px;
+}
+
+.titulo-libro, .autor-libro {
+  text-align: center;
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  filter: invert(100%); 
+  background-color: transparent; 
+}
+
+/* .carousel-indicators.custom-indicators {
+  bottom: -30px;
+  z-index: 0;
+  filter: invert(100%); 
+  background-color: transparent; 
+} */
 
 
 /*seccion tarjetas (opiniones)*/
@@ -271,23 +287,162 @@ body {
     padding: 40px 20px;
 }
 
-.contenedor {
-    display: flex;
-    flex-wrap: wrap;              
-    justify-content: center;     
-    align-items: center;
-    gap: 40px;                     
-    max-width: 1200px;
-    margin: 0 auto;
+
+.contenedor-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  overflow-x: auto;
 }
 
 .gato {
-    width: 200px;
-    height: auto;
+  width: 150px; 
+  height: auto;
 }
 
 .insta, .face, .youtube, .x {
-    width: 40px;
+  width: 30px;
+  height: auto;
+}
+
+
+@media (max-width: 430px) {
+
+  .logo {
+    width: 42px;
     height: auto;
+  }
+ 
+  .encabezado-seccion {
+    padding: 20px 10px 100px 10px;
+    box-sizing: border-box;
+  }
+
+  .contenedor {
+    flex-direction: column !important;
+    gap: 20px !important;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+    .formulario {
+    gap: 10px;
+    padding: 0;
+  }
+
+  .formulario input,
+  .formulario button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .icono-enviar {
+    width: 18px;
+    height: auto;
+  }
+
+  .carrusel1 {
+    order: 1;
+    margin-bottom: -100px;
+  }
+
+ 
+
+   .info{
+    order: 2;
+  }
+
+
+
+  .contenedor-trival {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px 100px 10px;
+  }
+
+ 
+
+  .imagen-superpuesta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .imagen-superpuesta img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .texto-trival {
+    text-align: left;
+  }
+
+  
+  .maravillas {
+    padding: 30px 15px 100px 15px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .h1 {
+    padding: 20px 10px 100px 10px;
+  }
+
+    .carousel-item .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px;
+  }
+
+  .carousel-item .col-md-4 {
+    flex: 0 0 80%; 
+    max-width: 80%;
+  }
+
+  .carousel-item img {
+    border-radius: 12px;
+  }
+
+  .titulo-libro, .autor-libro {
+    text-align: center;
+  }
+
+
+  .grid-tarjetas {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .tarjeta {
+    min-height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+    .contenedor-footer {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gato {
+    width: 120px;
+  }
+
+  .insta, .face, .youtube, .x {
+    width: 28px;
+  }
 }
 
