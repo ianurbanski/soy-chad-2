@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reparación de Cañas</title>
+  <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+    <section class="header">
+        <img src="logoNescar.png" alt="logonescar" class="logo">
+    </section>
+
+  <section class="formularioCaña">
+    <form id="formulario">
+      <label for="nombre">
+        Nombre:
+        <input type="text" id="nombre" name="nombre" placeholder="nombre" required>
+      </label> <br>
+      
+      <label for="apellido">
+        Apellido:
+        <input type="text" id="apellido" name="apellido" placeholder="apellido" required>
+      </label> <br>
+      
+      <label for="numero">
+        Número celular:
+        <input type="tel" id="numero" name="celular" placeholder="celular" required>
+      </label> <br>
+      
+      <label for="caña">
+        Caña:
+        <input type="text" id="caña" name="cana" placeholder="nombre de la caña" required>
+      </label> <br>
+      
+      <label for="reparacion">
+        ¿Qué le pasó a la caña?
+        <textarea id="reparacion" name="reparacion" rows="4" cols="40" placeholder="describí el problema" required></textarea>
+      </label> <br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Este es el enlace al archivo JavaScript externo -->
+  <script src="formulario.js"></script>
+</body>
+</html>
