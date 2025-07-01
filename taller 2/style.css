@@ -1,0 +1,62 @@
+.header {
+    text-align: center;
+    color: blue;
+    font-size: 60px;
+    background: url(balatro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-filtros {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  gap: 50px;
+}
+
+button#toggleFiltros {
+  padding: 8px 14px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+
+
+.unodeoro {
+    width: 214px;
+    height: 333px;
+}
+
+.contenedor-tarjetas {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.tarjeta{
+    flex:  1 1 calc(33.333% - 40px);
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px;
+    box-sizing: border-box;    
+}
+
+.fondo {
+    text-align: center;
+    background: url(unoDeEspadas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}

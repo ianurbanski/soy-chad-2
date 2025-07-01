@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="soy chad">BALATRO</h1>
+    </header>
+
+
+    <section class="filtros">
+        <p>filtros</p>
+
+        <button id="toggleFiltros">Filtar por palos</button>
+
+
+        <form id="formFiltros" class="form-filtros">
+            <label><input type="checkbox" value="espada"> Espada </label>
+            <label><input type="checkbox" value="basto"> Basto </label>
+            <label><input type="checkbox" value="oro"> Oro </label>
+            <label><input type="checkbox" value="copa"> Copa </label>
+        </form>
+    </section>
+
+    <section>
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta" data-filtros="espada,basto">
+                <h2>tarjeta 1</h2>
+                <p>espada y basto</p>
+                <img src="unoDeEspadas.jpg" alt="chad">
+                <p>esta es la tarjeta 1</p>
+            </div>
+
+            <div class="tarjeta" data-filtros="basto">
+                <h2>tarjeta 2</h2>
+                <p>basto</p>
+                <img src="unoDeBasto.jpg" alt="chad">
+                <p>esta es la tarjeta 2</p>
+            </div>            
+            <div class="tarjeta" data-filtros="basto">
+                <h2>tarjeta 3</h2>
+                <p>basto</p>
+                <img src="unoDeBasto.jpg" alt="chad">
+                <p>esta es la tarjeta 3</p>
+            </div>
+
+            <div class="tarjeta" data-filtros="oro,espada">
+                <h2>tarjeta 4</h2>
+                <p>oro y espada</p>
+                <img src="unoDeOro.jpg" alt="chad" class="unodeoro">
+                <p>esta es la tarjeta 4</p>
+            </div>
+
+            <div class="tarjeta" data-filtros="oro">
+                <h2>tarjeta 5</h2>
+                <p>oro</p>
+                <img src="unoDeOro.jpg" alt="chad" class="unodeoro">
+                <p>esta es la tarjeta 5</p>
+            </div>
+
+            <div class="tarjeta" data-filtros="copa,basto">
+                <h2>tarjeta 6</h2>
+                <p>copa y basto</p>
+                <img src="unoDeCopa.jpg" alt="chad">
+                <p>esta es la atarjeta 6</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="fondo">aca termina mi chadismo</p>
+    </footer>
+
+    <script src="sketc.js"></script>
+</body>
+</html>
